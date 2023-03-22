@@ -14,5 +14,22 @@ Aun asi, para el siguiente paso necesitamos que exista la conexion.
 ![Clonado de repositorio](./imagenes/2.PNG)
 
 ## 3. Commit y push
+
+ - Se ha creado el archivo *index.html*
+ - Hemos a;adido el archivo *index* con el comando *git add*
+ - Se inserto un mensaje descriptivo en para el *commit*
+ - Se han subido los cambios haciendo un *push*
+
+A continuacion esta la lista de comandos que se ha usado para esta parte
+
+![Commiteo y push de archivos](./imagenes/3.PNG)
+
+Y como se puede comprobar, los cambios se han subido a GitHub
+
+![Cambios subidos a GitHub](./imagenes/4.PNG)
+
 ## 4. Ramas
+
+
+
 ## 5. Merge
