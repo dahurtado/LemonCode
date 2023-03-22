@@ -30,6 +30,18 @@ Y como se puede comprobar, los cambios se han subido a GitHub
 
 ## 4. Ramas
 
+ - Con el comando *git branch [nombre de rama]* he creado la rama 'development'
+ - Se ha cambiado de rama con *checkout*
+ - Y he escrito en el archivo *index.html*
+  - Contenido del archivo
+![Contenido del archivo index.html](./imagenes/6.PNG)
+
+ - Se escribio un comentario descriptivo de los cambios realizados
+ - Y se sincronizaron los cambios a GitHub
+
+Imagen con el proceso y comandos para realizar este apartdao
+
+![Listado del proceso y de comandos](./imagenes/7.PNG)
 
 
 ## 5. Merge
