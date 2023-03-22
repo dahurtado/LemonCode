@@ -33,7 +33,7 @@ Y como se puede comprobar, los cambios se han subido a GitHub
  - Con el comando *git branch [nombre de rama]* he creado la rama 'development'
  - Se ha cambiado de rama con *checkout*
  - Y he escrito en el archivo *index.html*
-   - Contenido del archivo
+   - Contenido del archivo:
 
 ![Contenido del archivo index.html](./imagenes/6.PNG)
 
