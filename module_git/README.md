@@ -20,11 +20,11 @@ Aun asi, para el siguiente paso necesitamos que exista la conexion.
  - Se inserto un mensaje descriptivo en para el *commit*
  - Se han subido los cambios haciendo un *push*
 
-A continuacion esta la lista de comandos que se ha usado para esta parte
+A continuacion esta la lista de comandos que se ha usado para esta parte:
 
 ![Commiteo y push de archivos](./imagenes/3.PNG)
 
-Y como se puede comprobar, los cambios se han subido a GitHub
+Y como se puede comprobar, los cambios se han subido a GitHub:
 
 ![Cambios subidos a GitHub](./imagenes/4.PNG)
 
@@ -40,9 +40,19 @@ Y como se puede comprobar, los cambios se han subido a GitHub
  - Se escribio un comentario descriptivo de los cambios realizados
  - Y se sincronizaron los cambios a GitHub
 
-Imagen con el proceso y comandos para realizar este apartdao
+Imagen con el proceso y comandos para realizar este apartdao:
 
-![Listado del proceso y de comandos](./imagenes/7.PNG)
+![Listado del proceso y de comandos](./imagenes/5.PNG)
 
 
 ## 5. Merge
+
+ - Se ha vuelto a la rama *main* con *git checkout*
+ - Con *git merge* se han unido los cambios
+ - En mi caso no hubo conflictos, pero si los hubiera habria que resolver los conflictos que se hayan creado
+ - Por ultimo, subimos los cambios del repositorio local a GitHub
+
+Imagen del proceso:
+
+![Lista del proceso de Merge](./imagenes/7.PNG)
+
