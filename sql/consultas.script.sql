@@ -91,20 +91,35 @@ WHERE Art.Name = 'Queen'
 GROUP BY P.Name
 
 -- Listar las pistas que no están en ninguna playlist
-
---WIP
 SELECT
-    T.Name, T.TrackId, P.PlaylistId, P.Name
+    T.Name AS Cancion,
+    T.TrackId AS 'Cancion_ID',
+    P.Name AS Playlist,
+    P.PlaylistId AS 'Playlist_ID'
 FROM (
     Playlist P
     INNER JOIN PlaylistTrack Pt ON P.PlaylistId = Pt.PlaylistId
     INNER JOIN Track T ON Pt.TrackId = T.TrackId
 )
-WHERE P.PlaylistId IS NULL
-ORDER BY TrackId ASC
+WHERE T.TrackId IS NULL
 
--- 
-SELECT 
+-- Listar los artistas que no tienen album
+SELECT
+    Art.Name AS Artistas,
+    Alb.Title AS 'Titulo del Album'
+FROM (
+    Artist Art
+    LEFT JOIN Album Alb ON Art.ArtistId = Alb.ArtistId
+)
+WHERE Alb.Title IS NULL 
 
--- 
-SELECT 
+-- Listar los artistas con el número de albums que tienen
+SELECT
+    Art.Name AS Artistas,
+    COUNT(*) AS 'Cantidad de Albums'
+FROM (
+    Artist Art
+    INNER JOIN Album Alb ON Art.ArtistId = Alb.ArtistId
+)
+GROUP BY Art.Name
+HAVING COUNT(*) > 0
