@@ -2,6 +2,13 @@
 
 En este laboratorio se han adquirido los conocimientos de gestion y adminsitracion de bases de datos relacionales SQL.
 
+---
+
+Ejercicios
+ - [Consultas SQL](https://github.com/dahurtado/LemonCode/blob/main/sql/consultas.script.sql)
+ - [Consultas SQL Extra](https://github.com/dahurtado/LemonCode/blob/main/sql/consultas-extra.script.sql)
+
+---
 
 Temas de este modulo:
  1. Instalacion y conodicmiento basico
