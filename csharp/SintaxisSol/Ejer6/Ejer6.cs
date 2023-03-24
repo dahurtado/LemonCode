@@ -6,11 +6,22 @@ namespace Sintaxis
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("De que altura quiere la piramide?");
-            int nbr = Convert.ToInt32(Console.ReadLine());
             string piramid;
             int i = 0;
-            int j = 0;
+            int j;
+            int nbr;
+            var c = "";
+
+            Console.WriteLine("De que altura quiere la piramide?");
+            nbr = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Que caracter quiere imprimir?");
+            c = Console.ReadLine();
+            while (c == "")
+            {
+                Console.WriteLine("ERROR - Caracter no introducido\nQue caracter quiere imprimir?");
+                c = Console.ReadLine();
+            }
             while (i < nbr)
             {
                 j = 0;
@@ -19,13 +30,13 @@ namespace Sintaxis
                 {
                     if (i == nbr - 1)
                     {
-                        piramid += "*";
+                        piramid += c[0];
                     }
                     else
                     {
                         if (j == 0 || j == i)
                         {
-                            piramid += "*";
+                            piramid += c[0];
                         }
                         else
                         {
