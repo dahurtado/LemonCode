@@ -2,6 +2,19 @@
 
 En este laboratorio se ha aprendido a crear proyecto, uso del lenguaje, manejo de excepciones, LINQ y Web API
 
+---
+
+## Ejercicios
+
+ - [Sintaxis](https://github.com/dahurtado/LemonCode/tree/main/csharp/SintaxisSol)
+ - [Excepciones]()
+ - [POO]()
+ - [LINQ]()
+ - [Web API]()
+ - [Test Unitario]()
+
+---
+
 Contenidos:
  1. Primeros pasos
     - Creacion del primer proyecto
