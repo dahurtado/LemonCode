@@ -42,11 +42,11 @@ namespace Sintaxis
                 {
                     if (user_nbr > rand_nbr)
                     {
-                        throw new NumeroAleatorioException("\nERROR - Numero inferior");
+                        throw new NumeroAleatorioException("\nERROR - Numero a adivinar es mas pequeño");
                     }
                     else
                     {
-                        throw new NumeroAleatorioException("\nERROR - Numero superior");
+                        throw new NumeroAleatorioException("\nERROR - Numero a adivinar es mas grande");
                     }
                 }
             }
