@@ -1,0 +1,15 @@
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\bin\Debug\net6.0\Ejer4.exe
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\bin\Debug\net6.0\Ejer4.deps.json
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\bin\Debug\net6.0\Ejer4.runtimeconfig.json
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\bin\Debug\net6.0\Ejer4.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\bin\Debug\net6.0\Ejer4.pdb
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\obj\Debug\net6.0\Ejer4.csproj.AssemblyReference.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\obj\Debug\net6.0\Ejer4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\obj\Debug\net6.0\Ejer4.AssemblyInfoInputs.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\obj\Debug\net6.0\Ejer4.AssemblyInfo.cs
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\obj\Debug\net6.0\Ejer4.csproj.CoreCompileInputs.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\obj\Debug\net6.0\Ejer4.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\obj\Debug\net6.0\refint\Ejer4.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\obj\Debug\net6.0\Ejer4.pdb
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\obj\Debug\net6.0\Ejer4.genruntimeconfig.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\SintaxisSol\Ejer4\obj\Debug\net6.0\ref\Ejer4.dll
