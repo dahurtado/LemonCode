@@ -1,0 +1,12 @@
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\LibreriaPoo\bin\Debug\net6.0\LibreriaPoo.deps.json
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\LibreriaPoo\bin\Debug\net6.0\LibreriaPoo.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\LibreriaPoo\bin\Debug\net6.0\LibreriaPoo.pdb
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\LibreriaPoo\obj\Debug\net6.0\LibreriaPoo.csproj.AssemblyReference.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\LibreriaPoo\obj\Debug\net6.0\LibreriaPoo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\LibreriaPoo\obj\Debug\net6.0\LibreriaPoo.AssemblyInfoInputs.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\LibreriaPoo\obj\Debug\net6.0\LibreriaPoo.AssemblyInfo.cs
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\LibreriaPoo\obj\Debug\net6.0\LibreriaPoo.csproj.CoreCompileInputs.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\LibreriaPoo\obj\Debug\net6.0\LibreriaPoo.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\LibreriaPoo\obj\Debug\net6.0\refint\LibreriaPoo.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\LibreriaPoo\obj\Debug\net6.0\LibreriaPoo.pdb
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\LibreriaPoo\obj\Debug\net6.0\ref\LibreriaPoo.dll

@@ -1,0 +1,91 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "LibreriaPoo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/LibreriaPoo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibreriaPoo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LibreriaPoo/1.0.0": {
+      "type": "project",
+      "path": "../LibreriaPoo/LibreriaPoo.csproj",
+      "msbuildProject": "../LibreriaPoo/LibreriaPoo.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "LibreriaPoo >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\i40266\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Source\\LemonCodeRepo\\LemonCode\\csharp\\PooSol\\Ejer2\\Ejer2.csproj",
+      "projectName": "Ejer2",
+      "projectPath": "C:\\Source\\LemonCodeRepo\\LemonCode\\csharp\\PooSol\\Ejer2\\Ejer2.csproj",
+      "packagesPath": "C:\\Users\\i40266\\.nuget\\packages\\",
+      "outputPath": "C:\\Source\\LemonCodeRepo\\LemonCode\\csharp\\PooSol\\Ejer2\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\i40266\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Source\\LemonCodeRepo\\LemonCode\\csharp\\PooSol\\LibreriaPoo\\LibreriaPoo.csproj": {
+              "projectPath": "C:\\Source\\LemonCodeRepo\\LemonCode\\csharp\\PooSol\\LibreriaPoo\\LibreriaPoo.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

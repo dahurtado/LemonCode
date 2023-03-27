@@ -1,0 +1,15 @@
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\bin\Debug\net6.0\Ejer1.exe
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\bin\Debug\net6.0\Ejer1.deps.json
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\bin\Debug\net6.0\Ejer1.runtimeconfig.json
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\bin\Debug\net6.0\Ejer1.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\bin\Debug\net6.0\Ejer1.pdb
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\obj\Debug\net6.0\Ejer1.csproj.AssemblyReference.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\obj\Debug\net6.0\Ejer1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\obj\Debug\net6.0\Ejer1.AssemblyInfoInputs.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\obj\Debug\net6.0\Ejer1.AssemblyInfo.cs
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\obj\Debug\net6.0\Ejer1.csproj.CoreCompileInputs.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\obj\Debug\net6.0\Ejer1.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\obj\Debug\net6.0\refint\Ejer1.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\obj\Debug\net6.0\Ejer1.pdb
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\obj\Debug\net6.0\Ejer1.genruntimeconfig.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\PooSol\Ejer1\obj\Debug\net6.0\ref\Ejer1.dll
