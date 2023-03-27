@@ -4,6 +4,7 @@
 
  - [Read books](https://github.com/dahurtado/LemonCode/blob/main/csharp/PooSol/Ejer1/Program.cs)
  - [Slot machine](https://github.com/dahurtado/LemonCode/blob/main/csharp/PooSol/Ejer2/Program.cs)
+	- [Clase Tragaperra](https://github.com/dahurtado/LemonCode/blob/main/csharp/PooSol/LibreriaPoo/Tragaperra.cs)
 
 
 ---
