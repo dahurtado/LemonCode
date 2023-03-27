@@ -8,7 +8,7 @@ En este laboratorio se ha aprendido a crear proyecto, uso del lenguaje, manejo d
 
  - [Sintaxis](https://github.com/dahurtado/LemonCode/tree/main/csharp/SintaxisSol)
  - [Excepciones](https://github.com/dahurtado/LemonCode/tree/main/csharp/ExcepcionesSol)
- - [POO](https://github.com/dahurtado/LemonCode/tree/main/csharp/POOSol)
+ - [POO](https://github.com/dahurtado/LemonCode/tree/main/csharp/PooSol)
  - [LINQ](https://github.com/dahurtado/LemonCode/tree/main/csharp/LINQSol)
  - [Web API](https://github.com/dahurtado/LemonCode/tree/main/csharp/APISol)
  - [Test Unitario](https://github.com/dahurtado/LemonCode/tree/main/csharp/UnitTestSol)
