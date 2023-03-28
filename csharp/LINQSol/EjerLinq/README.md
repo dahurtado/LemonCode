@@ -108,10 +108,10 @@ El visionado de los ejercicios solo y solo se hacen mediante consultas LINQ.
 			from paciente in lista_pacientes
 			select new
 			{
-			prioridad = (paciente.HeartRate > 100 || paciente.Temperature > 39) ? "Si" : "No",
-			nombre = paciente.Name,
-			ritmo = paciente.HeartRate,
-			temperatura = paciente.Temperature
+				prioridad = (paciente.HeartRate > 100 || paciente.Temperature > 39) ? "Si" : "No",
+				nombre = paciente.Name,
+				ritmo = paciente.HeartRate,
+				temperatura = paciente.Temperature
 			}
 		);
 		```
