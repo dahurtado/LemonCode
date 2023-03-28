@@ -1,4 +1,4 @@
-# C#04 - LINQ (Language Integrated Query) - Clase Paciente
+# C#04 - LINQ (Language Integrated Query) - Program.cs
 
  - [Program.cs](https://github.com/dahurtado/LemonCode/blob/main/csharp/LINQSol/EjerLinq/Program.cs)
 
