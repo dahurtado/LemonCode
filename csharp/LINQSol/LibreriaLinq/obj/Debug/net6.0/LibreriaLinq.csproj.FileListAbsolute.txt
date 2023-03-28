@@ -1,0 +1,12 @@
+C:\Source\LemonCodeRepo\LemonCode\csharp\LINQSol\LibreriaLinq\bin\Debug\net6.0\LibreriaLinq.deps.json
+C:\Source\LemonCodeRepo\LemonCode\csharp\LINQSol\LibreriaLinq\bin\Debug\net6.0\LibreriaLinq.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\LINQSol\LibreriaLinq\bin\Debug\net6.0\LibreriaLinq.pdb
+C:\Source\LemonCodeRepo\LemonCode\csharp\LINQSol\LibreriaLinq\obj\Debug\net6.0\LibreriaLinq.csproj.AssemblyReference.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\LINQSol\LibreriaLinq\obj\Debug\net6.0\LibreriaLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source\LemonCodeRepo\LemonCode\csharp\LINQSol\LibreriaLinq\obj\Debug\net6.0\LibreriaLinq.AssemblyInfoInputs.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\LINQSol\LibreriaLinq\obj\Debug\net6.0\LibreriaLinq.AssemblyInfo.cs
+C:\Source\LemonCodeRepo\LemonCode\csharp\LINQSol\LibreriaLinq\obj\Debug\net6.0\LibreriaLinq.csproj.CoreCompileInputs.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\LINQSol\LibreriaLinq\obj\Debug\net6.0\LibreriaLinq.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\LINQSol\LibreriaLinq\obj\Debug\net6.0\refint\LibreriaLinq.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\LINQSol\LibreriaLinq\obj\Debug\net6.0\LibreriaLinq.pdb
+C:\Source\LemonCodeRepo\LemonCode\csharp\LINQSol\LibreriaLinq\obj\Debug\net6.0\ref\LibreriaLinq.dll

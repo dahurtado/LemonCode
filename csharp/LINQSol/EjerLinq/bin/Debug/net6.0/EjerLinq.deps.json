@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "EjerLinq/1.0.0": {
+        "dependencies": {
+          "LibreriaLinq": "1.0.0"
+        },
+        "runtime": {
+          "EjerLinq.dll": {}
+        }
+      },
+      "LibreriaLinq/1.0.0": {
+        "runtime": {
+          "LibreriaLinq.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EjerLinq/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LibreriaLinq/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
