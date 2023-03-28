@@ -1,7 +1,7 @@
 ﻿using System;
 using LibreriaLinq;
 using System.Linq;
-namespace Sintaxis
+namespace linq
 {
     internal class EjerLinq
     {
