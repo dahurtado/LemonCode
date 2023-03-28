@@ -83,16 +83,18 @@ namespace linq
         {
             Console.WriteLine("\n --- Ejercicio 1 - Especialidad 'pediatrics' y menor de 10 ---\n");
 
-            var lista_consulta = from paciente in lista_pacientes
-                                 where paciente.Specialty == "pediatrics"
-                                 where paciente.Age < 10
-                                 select new
-                                 {
-                                     nombre = paciente.Name,
-                                     edad = paciente.Age,
-                                     especialidad = paciente.Specialty
-
-                                 };
+            var lista_consulta =
+            (
+                from paciente in lista_pacientes
+                where paciente.Specialty == "pediatrics"
+                where paciente.Age < 10
+                select new
+                {
+                    nombre = paciente.Name,
+                    edad = paciente.Age,
+                    especialidad = paciente.Specialty
+                }
+            );
             foreach (var paciente_consulta in lista_consulta)
             {
                 Console.WriteLine(
@@ -107,14 +109,17 @@ namespace linq
         {
             Console.WriteLine("\n --- Ejercicio 2 - Ritmo mayor 100 o temperatura mayor 39 ---\n");
 
-            var lista_consulta = from paciente in lista_pacientes
-                                 where (paciente.HeartRate > 100 || paciente.Temperature > 39)
-                                 select new
-                                 {
-                                     nombre = paciente.Name,
-                                     ritmo = paciente.HeartRate,
-                                     temperatura = paciente.Temperature
-                                 };
+            var lista_consulta =
+            (
+                from paciente in lista_pacientes
+                where (paciente.HeartRate > 100 || paciente.Temperature > 39)
+                select new
+                {
+                    nombre = paciente.Name,
+                    ritmo = paciente.HeartRate,
+                    temperatura = paciente.Temperature
+                }
+            );
             foreach (var paciente_consulta in lista_consulta)
             {
                 Console.WriteLine(
@@ -129,17 +134,20 @@ namespace linq
         {
             Console.WriteLine("\n --- Ejercicio 3 - Falta de personal ---\n");
 
-            var lista_consulta = from paciente in lista_pacientes
-                                 where paciente.Specialty == "pediatrics"
-                                 select new
-                                 {
-                                     id = paciente.Id,
-                                     nombre = paciente.Name,
-                                     apellido = paciente.Lastname,
-                                     sexo = paciente.Sex,
-                                     edad = paciente.Age,
-                                     especialidad = paciente.Specialty
-                                 };
+            var lista_consulta = 
+            (
+                from paciente in lista_pacientes
+                where paciente.Specialty == "pediatrics"
+                select new
+                {
+                    id = paciente.Id,
+                    nombre = paciente.Name,
+                    apellido = paciente.Lastname,
+                    sexo = paciente.Sex,
+                    edad = paciente.Age,
+                    especialidad = paciente.Specialty
+                }
+            );
             foreach (var paciente_consulta in lista_consulta)
             {
                 Console.WriteLine(
@@ -168,14 +176,17 @@ namespace linq
         {
             Console.WriteLine("\n --- Ejercicio 5 - Mirar si tiene prioridad (Ritmo > 100 o Temperatura > 39) ---\n");
 
-            var lista_consulta = from paciente in lista_pacientes
-                                 select new
-                                 {
-                                    prioridad = (paciente.HeartRate > 100 || paciente.Temperature > 39) ? "Si" : "No",
-                                    nombre = paciente.Name,
-                                    ritmo = paciente.HeartRate,
-                                    temperatura = paciente.Temperature
-                                 };
+            var lista_consulta = 
+            (
+                from paciente in lista_pacientes
+                select new
+                {
+                    prioridad = (paciente.HeartRate > 100 || paciente.Temperature > 39) ? "Si" : "No",
+                    nombre = paciente.Name,
+                    ritmo = paciente.HeartRate,
+                    temperatura = paciente.Temperature
+                }
+            );
             foreach (var paciente_consulta in lista_consulta)
             {
                 Console.WriteLine(

@@ -28,15 +28,18 @@ El visionado de los ejercicios solo y solo se hacen mediante consultas LINQ.
 		Consulta:
 
 		```csharp
-		var lista_consulta = from paciente in lista_pacientes
-							where paciente.Specialty == "pediatrics"
-							where paciente.Age < 10
-							select new
-							{
-								nombre = paciente.Name,
-								edad = paciente.Age,
-								especialidad = paciente.Specialty
-							};
+		var lista_consulta =
+		(
+			from paciente in lista_pacientes
+			where paciente.Specialty == "pediatrics"
+			where paciente.Age < 10
+			select new
+			{
+				nombre = paciente.Name,
+				edad = paciente.Age,
+				especialidad = paciente.Specialty
+			}
+		);
 		```
 
  - Ejercicio 2
@@ -45,14 +48,17 @@ El visionado de los ejercicios solo y solo se hacen mediante consultas LINQ.
 		Consulta:
 
 		```csharp
-		var lista_consulta = from paciente in lista_pacientes
-							 where (paciente.HeartRate > 100 || paciente. Temperature > 39)
-							 select new
-							 {
-							 	nombre = paciente.Name,
-							 	ritmo = paciente.HeartRate,
-							 	temperatura = paciente.Temperature
-							 };
+		var lista_consulta =
+		(
+			from paciente in lista_pacientes
+			where (paciente.HeartRate > 100 || paciente.Temperature > 39)
+			select new
+			{
+				nombre = paciente.Name,
+				ritmo = paciente.HeartRate,
+				temperatura = paciente.Temperature
+			}
+		);
 		```
 		
  - Ejercicio 3
@@ -61,17 +67,20 @@ El visionado de los ejercicios solo y solo se hacen mediante consultas LINQ.
 		Consulta:
 
 		```csharp
-		var lista_consulta = from paciente in lista_pacientes
-							 where paciente.Specialty == "pediatrics"
-							 select new
-							 {
-							 	id = paciente.Id,
-							 	nombre = paciente.Name,
-							 	apellido = paciente.Lastname,
-							 	sexo = paciente.Sex,
-							 	edad = paciente.Age,
-							 	especialidad = paciente.Specialty
-							 };
+		var lista_consulta = 
+		(
+			from paciente in lista_pacientes
+			where paciente.Specialty == "pediatrics"
+			select new
+			{
+				id = paciente.Id,
+				nombre = paciente.Name,
+				apellido = paciente.Lastname,
+				sexo = paciente.Sex,
+				edad = paciente.Age,
+				especialidad = paciente.Specialty
+			}
+		);
 		```
 		
  - Ejercicio 4
@@ -94,14 +103,17 @@ El visionado de los ejercicios solo y solo se hacen mediante consultas LINQ.
 		Consulta:
 
 		```csharp
-		var lista_consulta = from paciente in lista_pacientes
-							 select new
-							 {
-							 	prioridad = (paciente.HeartRate > 100 || paciente.Temperature > 39) ? "Si" : "No",
-							 	nombre = paciente.Name,
-							 	ritmo = paciente.HeartRate,
-							 	temperatura = paciente.Temperature
-							 };
+		var lista_consulta = 
+		(
+			from paciente in lista_pacientes
+			select new
+			{
+			prioridad = (paciente.HeartRate > 100 || paciente.Temperature > 39) ? "Si" : "No",
+			nombre = paciente.Name,
+			ritmo = paciente.HeartRate,
+			temperatura = paciente.Temperature
+			}
+		);
 		```
 		
  - Ejercicio 6
