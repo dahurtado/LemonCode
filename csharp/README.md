@@ -20,30 +20,30 @@ Contenidos:
     - Creacion del primer proyecto
     - Compilacion y depuracion
     - Otras herramientras
- 2. Sintaxis
+ 2. [Sintaxis](https://github.com/dahurtado/LemonCode/tree/main/csharp/SintaxisSol)
     - Variables
     - Operadores
     - Condicionales y bucles
- 3. Excepciones
+ 3. [Excepciones](https://github.com/dahurtado/LemonCode/tree/main/csharp/ExcepcionesSol)
     - Tipos de excepciones
     - Excepciones personalizadas
- 4. POO (Programacion orientada a objetos)
+ 4. [POO (Programacion orientada a objetos)](https://github.com/dahurtado/LemonCode/tree/main/csharp/PooSol)
     - Clases y objetos
     - Herencia
     - Modificadores de acceso
     - Poliformismo
- 5. LINQ (Language Integrated Query)
+ 5. [LINQ (Language Integrated Query)](https://github.com/dahurtado/LemonCode/tree/main/csharp/LINQSol)
     - Ventajas sobre metodos iterativos
     - Principales metodos LINQ
     - Sintaxis integrada
- 6. Web API
+ 6. [Web API](https://github.com/dahurtado/LemonCode/tree/main/csharp/APISol)
     - Introduccion
     - Soap vs Rest
     - Creacion de proyecto .NET Rest API
     - API - Modelo
     - API - Repositorio
     - API - Controlador
- 7. Testing
+ 7. [Testing](https://github.com/dahurtado/LemonCode/tree/main/csharp/UnitTestSol)
     - Caso practico
     - Test unit
     - Mock
