@@ -37,7 +37,18 @@ namespace WebAPI.Repositories
 
         public void DeleteActor(Actor actor)
         {
-            throw new System.NotImplementedException();
+            var lista_actores = ReadActors();
+
+            foreach (var a in lista_actores)
+            {
+                if (a.Id == actor.Id)
+                {
+                    lista_actores.Remove(a);
+                    break;
+                }
+            }
+
+            UpdateActors(lista_actores);
         }
 
         public Actor GetActorById(int id)
@@ -68,7 +79,29 @@ namespace WebAPI.Repositories
 
         public void UpdateActor(Actor actor)
         {
-            
+            var lista_actores = ReadActors();
+            actor = GetActorById(actor.Id);
+
+            var lista_linq = from a in lista_actores select a;
+
+            foreach (var a in lista_linq)
+            {
+                if (a.Id == actor.Id)
+                {
+                    if (actor.Nombre == null || actor.Apellido == null || actor.Peliculas == null)
+                    {
+                        throw new Exception("No se pueden dejar campos vacios.\n\t--- Actualizado de datos detenido---\n");
+                    }
+                    else
+                    {
+                        a.Nombre = actor.Nombre;
+                        a.Apellido = actor.Apellido;
+                        a.Peliculas = actor.Peliculas;
+                    }
+                }
+            }
+            UpdateActors(lista_linq.ToList());
+
         }
     }
 }

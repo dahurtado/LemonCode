@@ -11,6 +11,5 @@ namespace WebAPI.Contracts
         List<Actor> ReadActors();
         void DeleteActor(Actor actor);
         void UpdateActor(Actor actor);
-
     }
 }

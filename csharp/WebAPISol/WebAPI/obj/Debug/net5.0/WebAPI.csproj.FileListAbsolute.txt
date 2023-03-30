@@ -33,3 +33,4 @@ C:\Source\LemonCodeRepo\LemonCode\csharp\WebAPISol\WebAPI\obj\Debug\net5.0\refin
 C:\Source\LemonCodeRepo\LemonCode\csharp\WebAPISol\WebAPI\obj\Debug\net5.0\WebAPI.pdb
 C:\Source\LemonCodeRepo\LemonCode\csharp\WebAPISol\WebAPI\obj\Debug\net5.0\WebAPI.genruntimeconfig.cache
 C:\Source\LemonCodeRepo\LemonCode\csharp\WebAPISol\WebAPI\obj\Debug\net5.0\ref\WebAPI.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\WebAPISol\WebAPI\bin\Debug\net5.0\Resources\Actores copy.json

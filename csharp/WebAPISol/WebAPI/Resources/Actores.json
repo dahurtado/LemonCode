@@ -1,22 +1,5 @@
 [
   {
-    "Id": 1,
-    "Nombre": "Jack",
-    "Apellido": "Nicholson",
-    "Peliculas": [
-      {
-        "Id": 1,
-        "Titulo": "El resplandor",
-        "FechaPublicacion": 1980
-      },
-      {
-        "Id": 2,
-        "Titulo": "Mejor... imposible",
-        "FechaPublicacion": 1997
-      }
-    ]
-  },
-  {
     "Id": 2,
     "Nombre": "Tom",
     "Apellido": "Hanks",
@@ -30,7 +13,7 @@
   },
   {
     "Id": 3,
-    "Nombre": "Anthony",
+    "Nombre": "Antonio",
     "Apellido": "Hopkins",
     "Peliculas": [
       {
@@ -58,20 +41,8 @@
     ]
   },
   {
-    "Id": 0,
-    "Nombre": "string",
-    "Apellido": "string",
-    "Peliculas": [
-      {
-        "Id": 0,
-        "Titulo": "string",
-        "FechaPublicacion": 0
-      }
-    ]
-  },
-  {
     "Id": 7,
-    "Nombre": "Daniel",
+    "Nombre": "dirky",
     "Apellido": "Hurtado Perera",
     "Peliculas": [
       {

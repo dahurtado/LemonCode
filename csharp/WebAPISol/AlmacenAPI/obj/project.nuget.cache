@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "sexDlIPAFFP3qJcbO70HLMikLe8x+84HxoC5o1h+qZxd7xjsXJ7hXHqKete10WNAy6UfCrQnkdKKdPYYEXMD3w==",
+  "success": true,
+  "projectFilePath": "C:\\Source\\LemonCodeRepo\\LemonCode\\csharp\\WebAPISol\\AlmacenAPI\\AlmacenAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\i40266\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\i40266\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\i40266\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\i40266\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\i40266\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\i40266\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

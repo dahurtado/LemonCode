@@ -8,6 +8,7 @@ using System.Numerics;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using System.Runtime.CompilerServices;
 
 namespace WebAPI.Controllers
 {
@@ -40,18 +41,33 @@ namespace WebAPI.Controllers
             }
         }
 
-        //TO DO
-        [HttpPut("{id}")]
-        public ActionResult<Actor> UpdateActor(int id)
+
+        [HttpPut]
+        public ActionResult UpdateActor(Actor act)
         {
             try
             {
-                var actor_update = _actorRepositorio.GetActorById(id);
-                return (actor_update);
+                _actorRepositorio.UpdateActor(act);
+                return Ok();
             }
             catch (Exception ex)
             {
                 throw;
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult DeleteActor(int id)
+        {
+            try
+            {
+                var actor_borrar = _actorRepositorio.GetActorById(id);
+                _actorRepositorio.DeleteActor(actor_borrar);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
 
