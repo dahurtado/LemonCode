@@ -1,4 +1,4 @@
-# C#5 - WebAPI - API Actores
+# C#5 - WebAPI - API Almacen
 
  - [Interfaz](https://github.com/dahurtado/LemonCode/blob/main/csharp/WebAPISol/AlmacenAPI/Contracts/IArticuloRepositorio.cs)
  - [Controlador](https://github.com/dahurtado/LemonCode/blob/main/csharp/WebAPISol/AlmacenAPI/Controllers/ArticuloController.cs)
