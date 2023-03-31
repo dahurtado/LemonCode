@@ -5,10 +5,10 @@ namespace AlmacenAPI.Contracts
     public interface IArticuloRepositorio
     {
         void CreateArticulo(Articulo articulo);
-        Articulo CreateArticulo(ArticuloInsertar art);
+        void CreateArticulo(ArticuloInsertar art);
         List<Articulo> ReadArticulos();
         Articulo ReadArticuloById(int id);
-        void UpdateArticulo(Articulo articulo);
+        void UpdateArticulo(int id, int cantidad);
         void DeleteArticulo(int id);
     }
 }
