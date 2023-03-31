@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejer1.Console", "Ejer1.Console\Ejer1.Console.csproj", "{AD331D50-6882-41F1-A6F3-E14CAB5CD545}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejer1.Test", "Ejer1.Test\Ejer1.Test.csproj", "{0B4A9BEC-DEE0-4A9E-996A-8C892556E4F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AD331D50-6882-41F1-A6F3-E14CAB5CD545}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD331D50-6882-41F1-A6F3-E14CAB5CD545}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD331D50-6882-41F1-A6F3-E14CAB5CD545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B4A9BEC-DEE0-4A9E-996A-8C892556E4F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4A9BEC-DEE0-4A9E-996A-8C892556E4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4A9BEC-DEE0-4A9E-996A-8C892556E4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4A9BEC-DEE0-4A9E-996A-8C892556E4F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
