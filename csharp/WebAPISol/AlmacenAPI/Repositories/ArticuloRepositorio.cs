@@ -115,7 +115,7 @@ namespace AlmacenAPI.Repositories
                         }
                         else
                         {
-                            a.Cantidad -= cantidad;
+                            a.Cantidad = cantidad + a.Cantidad;
                         }
                     }
                     else

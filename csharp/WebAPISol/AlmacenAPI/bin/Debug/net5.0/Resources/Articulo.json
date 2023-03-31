@@ -5,5 +5,19 @@
     "Descripcion": "lorem ipsun",
     "FechaEntrada": "31/03/2023 12:23",
     "Cantidad": 360
+  },
+  {
+    "Id": 2,
+    "Nombre": "cuchillo de cocina",
+    "Descripcion": "tan afilado que te cortas sin querer",
+    "FechaEntrada": "31/03/2023 13:28",
+    "Cantidad": 20
+  },
+  {
+    "Id": 3,
+    "Nombre": "cuchillo de cocina",
+    "Descripcion": "tan afilado que te cortas sin querer",
+    "FechaEntrada": "31/03/2023 13:29",
+    "Cantidad": 0
   }
 ]
