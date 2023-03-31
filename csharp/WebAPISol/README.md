@@ -1,13 +1,17 @@
 # C#05 - WebAPI
 
 ## Ejercicios
-1. Continuar el ejemplo del ejercicio e implementar los metodos que han quedado pendientes.
+1. [ActorAPI](https://github.com/dahurtado/LemonCode/tree/main/csharp/WebAPISol/WebAPI)
+
+	Continuar el ejemplo del ejercicio e implementar los metodos que han quedado pendientes.
  - Funciones a implementar:
 	- Obtener un Actor por su ID
 	- Modificar un Actor
 	- Borrar un Actor
 
-2. Crear una nueva *Web API* para la gestion de un almacen/ El controlador debera permitir las siguientes funciones.
+2. [AlmacenAPI](https://github.com/dahurtado/LemonCode/tree/main/csharp/WebAPISol/AlmacenAPI)
+
+	Crear una nueva *Web API* para la gestion de un almacen. El controlador debera permitir las siguientes funciones.
 
  - Anadir nuevo Articulo. Un articulo tendra los siguientes campos:
 	
