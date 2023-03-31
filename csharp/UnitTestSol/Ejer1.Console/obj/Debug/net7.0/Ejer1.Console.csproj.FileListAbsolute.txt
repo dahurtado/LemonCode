@@ -1,0 +1,15 @@
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\bin\Debug\net7.0\Ejer1.Console.exe
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\bin\Debug\net7.0\Ejer1.Console.deps.json
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\bin\Debug\net7.0\Ejer1.Console.runtimeconfig.json
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\bin\Debug\net7.0\Ejer1.Console.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\bin\Debug\net7.0\Ejer1.Console.pdb
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\obj\Debug\net7.0\Ejer1.Console.csproj.AssemblyReference.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\obj\Debug\net7.0\Ejer1.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\obj\Debug\net7.0\Ejer1.Console.AssemblyInfoInputs.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\obj\Debug\net7.0\Ejer1.Console.AssemblyInfo.cs
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\obj\Debug\net7.0\Ejer1.Console.csproj.CoreCompileInputs.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\obj\Debug\net7.0\Ejer1.Console.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\obj\Debug\net7.0\refint\Ejer1.Console.dll
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\obj\Debug\net7.0\Ejer1.Console.pdb
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\obj\Debug\net7.0\Ejer1.Console.genruntimeconfig.cache
+C:\Source\LemonCodeRepo\LemonCode\csharp\UnitTestSol\Ejer1.Console\obj\Debug\net7.0\ref\Ejer1.Console.dll
