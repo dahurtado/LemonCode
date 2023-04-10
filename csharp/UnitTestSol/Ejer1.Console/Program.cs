@@ -14,7 +14,7 @@ while (true)
             throw new Exception("No puede ser null");
         else
         {
-            var u_email = new Email(user_email);
+            var u_email = new Email();
             Console.WriteLine(u_email.VerifyEmail(user_email));
         }
     }

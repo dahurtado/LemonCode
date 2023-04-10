@@ -7,14 +7,9 @@ using System.Threading.Tasks;
 
 namespace Ejer1.Console
 {
-    internal class Email
+    public class Email
     {
         public string? User_Email { get; set; }
-
-        public Email(string? user_email)
-        {
-            user_email = User_Email;
-        }
 
         public bool VerifyEmail(string email)
         {
