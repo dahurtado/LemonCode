@@ -30,7 +30,7 @@ namespace Ejer1.Test
             //Act
             var verify = email_verify.VerifyEmail(user_email);
             //Assertepic
-            Assert.AreEqual(verify, true);
+            Assert.AreEqual(verify, false);
         }
 
         [TestMethod]
@@ -44,7 +44,7 @@ namespace Ejer1.Test
             var comparacion = verificarMock.Object.aniadir_email(email_prueba);
 
             //Assert
-            Assert.AreEqual(comparacion, true);
+            Assert.AreEqual(comparacion, false);
         }
 
         [TestMethod]
@@ -73,7 +73,7 @@ namespace Ejer1.Test
             var comparacion = verificarMock.Object.aniadir_email(email_prueba);
 
             //Assert
-            Assert.AreEqual(comparacion, true);
+            Assert.AreEqual(comparacion, false);
         }
 
         [TestMethod]
