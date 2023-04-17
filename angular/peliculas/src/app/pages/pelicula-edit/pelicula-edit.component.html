@@ -18,7 +18,13 @@
     id="year"
     min="1920"
     max="2024"
-    [(ngModel)]="peli.year">
+    [(ngModel)]="peli.year"
+    required
+    #year = 'ngModel'
+  >
+  <div *ngIf="year.invalid && (year.dirty || year.touched)">
+    <div *ngIf="year.errors?.['required']">El año es obligatorio</div>
+  </div>
 </div>
 <div>
   <label for="director">Director</label>
