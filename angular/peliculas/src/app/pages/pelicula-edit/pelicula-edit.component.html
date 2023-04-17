@@ -1,0 +1,27 @@
+<h1>Edicion de peliculas</h1>
+<div>
+  <img src="{{ peli.poster }}">
+</div>
+<div>
+  <label for="url">URL Imagen</label>
+  <input type="text" name="url" id="url" [(ngModel)]="peli.poster">
+</div>
+<div>
+  <label for="name">Nombre</label>
+  <input type="text" name="name" id="name" [(ngModel)]="peli.name"/>
+</div>
+<div>
+  <label for="year">Año</label>
+  <input
+    type="number"
+    name="year"
+    id="year"
+    min="1920"
+    max="2024"
+    [(ngModel)]="peli.year">
+</div>
+<div>
+  <label for="director">Director</label>
+  <input type="text" name="director" id="director" [(ngModel)]="peli.director">
+</div>
+<button (click)="handleSaveClick()">Guardar</button>

@@ -1,0 +1,7 @@
+nav {
+  display: flex;
+  justify-content: start;
+  column-gap: 15px;
+  padding: 10px;
+  background-color: blanchedalmond;
+}

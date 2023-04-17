@@ -1,13 +1,12 @@
 export class Pelicula
 {
-  id: Number;
+  id!: number;
   name: string;
   poster: string;
   director: string;
-  year: Number;
+  year: number;
 
-  constructor(id: Number, name: string, poster: string, director: string, year: Number) {
-    this.id = id;
+  constructor(name: string, poster: string, director: string, year: number) {
     this.name = name;
     this.poster = poster;
     this.director = director;
