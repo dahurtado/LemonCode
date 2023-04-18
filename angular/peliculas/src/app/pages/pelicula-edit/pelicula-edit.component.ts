@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Pelicula } from '@/model/pelicula.model';
 import { PeliculaApiService } from '@/services/pelicula-api.service';
+import { NgForm, FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 
 @Component({
@@ -11,16 +12,29 @@ import { PeliculaApiService } from '@/services/pelicula-api.service';
 })
 export class PeliculaEditComponent {
   id: string;
-  peli: Pelicula;
+  peliForm: FormGroup;
 
-  constructor(private route: ActivatedRoute, private peliApi: PeliculaApiService) {
+  constructor(
+    private route: ActivatedRoute,
+    private peliApi: PeliculaApiService,
+    private formBuilder: FormBuilder
+    ) {
     this.id = '';
-    this.peli = new Pelicula("","","",0);
 
     this.id = this.route.snapshot.paramMap.get('id')!;
+
+    this.peliForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      poster: ['', [Validators.required, Validators.pattern('https?://.+')]],
+      director: ['', Validators.required],
+      year: ['', Validators.required]
+    });
   }
   handleSaveClick() {
-    console.log(this.peli);
-    this.peliApi.Insert(this.peli);
+    if (this.peliForm.valid)
+    {
+      console.log(this.peliForm.value);
+      //this.peliApi.Insert(this.peli);
+    }
   }
 }

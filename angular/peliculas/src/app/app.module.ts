@@ -7,6 +7,9 @@ import { CardPeliculaComponent } from './pages/pelicula-list/card-pelicula/card-
 import { PeliculaListComponent } from './pages/pelicula-list/pelicula-list.component';
 import { PeliculaEditComponent } from './pages/pelicula-edit/pelicula-edit.component';
 import { FormsModule } from '@angular/forms';
+import { FieldErrorDisplayComponent } from './common/field-error-display/field-error-display.component';
+import { InputWrapperComponent } from './common/input-wrapper/input-wrapper.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes : Routes = [
   {path: '', component: PeliculaListComponent},
@@ -19,12 +22,15 @@ const appRoutes : Routes = [
     AppComponent,
     CardPeliculaComponent,
     PeliculaListComponent,
-    PeliculaEditComponent
+    PeliculaEditComponent,
+    FieldErrorDisplayComponent,
+    InputWrapperComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

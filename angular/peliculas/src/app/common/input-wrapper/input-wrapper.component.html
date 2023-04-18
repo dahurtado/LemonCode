@@ -1,0 +1,29 @@
+<div>
+  <label>{{ label }}</label><br>
+
+  <input
+    *ngIf="type == 'number'"
+    [type]="type"
+    [(ngModel)]="value"
+    (ngModelChange)="onChange($event)"
+    (blur)="onTouch()"
+    min="1920"
+    max="2024"
+  >
+
+  <input
+    *ngIf="type != 'number'"
+    [type]="type"
+    [(ngModel)]="value"
+    (ngModelChange)="onChange($event)"
+    (blur)="onTouch()"
+  >
+  <app-field-error-display
+      name="name"
+      [fieldNgModel]="_formControl"
+      [customFieldErrors]="[{
+        id: 'pattern',
+        text: 'La URL debe ser una direccion HTTP bien formada, http://www.miweb.com o https://www.miweb.com'
+      }]"
+  ></app-field-error-display>
+</div>
