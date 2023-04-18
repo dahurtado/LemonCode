@@ -16,7 +16,7 @@ export class PeliculaListComponent {
   };
 
   loadPeliculas = async () => {
-    this.peliculas = await this.peliculaApiService.getAll();
+    this.peliculaApiService.getAll().subscribe((peliculas) => (this.peliculas = peliculas))
   };
 
   ngOnInit(): void {

@@ -1,18 +1,33 @@
 <h1>Edicion de peliculas</h1>
 <div>
-  <img src="{{ peli.poster }}">
+  <!--<img src="{{  }}">-->
 </div>
-<form #peliForm="ngForm">
+<form [formGroup]="peliForm">
 
-  <app-input-wrapper name="poster" label="URL Imagen" [(ngModel)]="peli.poster" required pattern="https?://.+"></app-input-wrapper>
+  <app-input-wrapper
+    name="poster"
+    label="URL Imagen"
+    formControlName = "poster"
+    ></app-input-wrapper>
 
-  <app-input-wrapper name="name" label="Nombre" [(ngModel)]="peli.name" required></app-input-wrapper>
+  <app-input-wrapper
+    name="name"
+    label="Nombre"
+    formControlName = "name"
+    ></app-input-wrapper>
 
-  <app-input-wrapper name="year" label="Año" type="number" [(ngModel)]="peli.year" required></app-input-wrapper>
+  <app-input-wrapper
+    name="year"
+    label="Año"
+    type="number"
+    formControlName = "year"
+    ></app-input-wrapper>
 
-  <app-input-wrapper name="director" label="Director" [(ngModel)]="peli.director" required></app-input-wrapper>
+  <app-input-wrapper
+    name="director"
+    label="Director"
+    formControlName = "director"
+    ></app-input-wrapper>
 
-  <button (click)="handleSaveClick(peliForm)"
-    [disabled]="peliForm?.invalid"
-  >Guardar</button>
+  <button (click)="handleSaveClick()">Guardar</button>
 </form>

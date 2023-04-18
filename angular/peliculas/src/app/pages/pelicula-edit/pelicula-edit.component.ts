@@ -13,28 +13,30 @@ import { NgForm, FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class PeliculaEditComponent {
   id: string;
   peliForm: FormGroup;
+  url!: string;
 
   constructor(
-    private route: ActivatedRoute,
-    private peliApi: PeliculaApiService,
-    private formBuilder: FormBuilder
-    ) {
-    this.id = '';
+      private route: ActivatedRoute,
+      private peliApi: PeliculaApiService,
+      formBuilder: FormBuilder,
+    )
+    {
+      this.id = '';
 
-    this.id = this.route.snapshot.paramMap.get('id')!;
+      this.id = this.route.snapshot.paramMap.get('id')!;
 
-    this.peliForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      poster: ['', [Validators.required, Validators.pattern('https?://.+')]],
-      director: ['', Validators.required],
-      year: ['', Validators.required]
-    });
-  }
+      this.peliForm = formBuilder.group({
+        name: ['', Validators.required],
+        poster: ['', [Validators.required, Validators.pattern('https?://.+')]],
+        director: ['', Validators.required],
+        year: ['', Validators.required]
+      });
+    }
   handleSaveClick() {
     if (this.peliForm.valid)
     {
       console.log(this.peliForm.value);
-      //this.peliApi.Insert(this.peli);
+      this.peliApi.Insert(this.peliForm.value);
     }
   }
 }
