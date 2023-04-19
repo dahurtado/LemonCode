@@ -13,6 +13,6 @@ export class CardPeliculaComponent {
   constructor(private router: Router) {}
 
   handleImageClick() {
-    this.router.navigate(['/edit', this.peli.name]);
+    this.router.navigate(['/edit', this.peli.id]);
   }
 }
