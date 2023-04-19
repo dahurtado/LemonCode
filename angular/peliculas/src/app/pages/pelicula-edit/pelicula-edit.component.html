@@ -1,6 +1,6 @@
-<h1>Edicion de peliculas</h1>
-<div>
-  <button (click)="returnPelicula()">Ver Pelicula</button>
+<h1>Modificar pelicula</h1>
+<div class="imagen">
+  <img src="{{ returnPelicula('poster') }}">
 </div>
 <form [formGroup]="peliForm">
 
@@ -8,12 +8,14 @@
     name="poster"
     label="URL Imagen"
     formControlName = "poster"
+    [ph]='returnPelicula("poster")'
     ></app-input-wrapper>
 
   <app-input-wrapper
     name="name"
     label="Nombre"
     formControlName = "name"
+    [ph]="returnPelicula('name')"
     ></app-input-wrapper>
 
   <app-input-wrapper
@@ -21,12 +23,14 @@
     label="Año"
     type="number"
     formControlName = "year"
+    [ph]="returnPelicula('year')"
     ></app-input-wrapper>
 
   <app-input-wrapper
     name="director"
     label="Director"
     formControlName = "director"
+    [ph]="returnPelicula('director')"
     ></app-input-wrapper>
 
   <button (click)="handleSaveClick()">Guardar</button>

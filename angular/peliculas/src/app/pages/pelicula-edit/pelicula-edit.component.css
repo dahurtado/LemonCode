@@ -5,3 +5,18 @@ form > div {
 button {
   margin: 5px;
 }
+
+h1 {
+  text-align: center;
+}
+
+.imagen {
+  padding: 10px;
+}
+
+form, .imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

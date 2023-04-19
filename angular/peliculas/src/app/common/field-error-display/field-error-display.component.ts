@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { AbstractControl, AbstractControlDirective } from '@angular/forms';
 
-type ValidatorId = 'required' | 'pattern' | 'maxLength';
+type ValidatorId = 'required' | 'pattern' | 'minLength';
 
 interface FieldError {
   [key: string]: string;
@@ -27,8 +27,7 @@ export class FieldErrorDisplayComponent {
     this.fieldNgModel = null;
     this.fieldErrorObject = {
       required: 'El campo es obligatorio',
-      pattern: 'El formato no es valido',
-      maxLength: 'El campo tiene que tener minimo 3 caracteres de longitud'
+      pattern: 'El formato no es valido'
     };
   }
 

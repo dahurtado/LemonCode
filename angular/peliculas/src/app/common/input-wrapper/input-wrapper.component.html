@@ -4,7 +4,7 @@
   <input
     *ngIf="type == 'number'"
     [type]="type"
-    [(ngModel)]="value"
+    [(ngModel)]="ph"
     (ngModelChange)="onChange($event)"
     (blur)="onTouch()"
     min="1920"
@@ -14,9 +14,10 @@
   <input
     *ngIf="type != 'number'"
     [type]="type"
-    [(ngModel)]="value"
+    [(ngModel)]="ph"
     (ngModelChange)="onChange($event)"
     (blur)="onTouch()"
+    minlength="3"
   >
   <app-field-error-display
       name="name"
@@ -24,6 +25,10 @@
       [customFieldErrors]="[{
         id: 'pattern',
         text: 'La URL debe ser una direccion HTTP bien formada, http://www.miweb.com o https://www.miweb.com'
+      },
+      {
+        id: 'minLength',
+        text: 'La longitud tiene que ser minimo 3 caracteres'
       }]"
   ></app-field-error-display>
 </div>

@@ -3,7 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 import { Pelicula } from '@/model/pelicula.model';
 import { PeliculaApiService } from '@/services/pelicula-api.service';
 import { NgForm, FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Observable } from 'rxjs';
 
 
 @Component({
@@ -12,11 +11,13 @@ import { Observable } from 'rxjs';
   styleUrls: ['./pelicula-edit.component.css']
 })
 export class PeliculaEditComponent {
-  id: string;
+  idRuta: string;
   peliForm: FormGroup;
 
-  peliculaEdit: any;
+  peliculaEdit: Pelicula = new Pelicula('','','',0);
   idEdit: number;
+
+  peliculas: Pelicula[];
 
   constructor
   (
@@ -25,12 +26,16 @@ export class PeliculaEditComponent {
     formBuilder: FormBuilder,
   )
   {
-    this.id = this.route.snapshot.paramMap.get('id')!;
-    this.idEdit = +this.id;
+    this.idRuta = this.route.snapshot.paramMap.get('id')!;
+    this.idEdit = +this.idRuta;
 
-    this.peliApi.getId(this.idEdit).subscribe(data => {this.peliculaEdit = data});
+    this.peliculas = [];
+    this.peliApi.getAll().subscribe((peliculas) => (this.peliculas = peliculas));
 
-    console.log(this.id);
+    if (this.idRuta != null)
+    {
+      this.peliApi.getById(this.idEdit).subscribe(data => {this.peliculaEdit = data});
+    }
 
     this.peliForm = formBuilder.group({
       id: this.idEdit,
@@ -39,11 +44,29 @@ export class PeliculaEditComponent {
       director: ['', Validators.required],
       year: ['', Validators.required]
     });
+
   }
 
-  returnPelicula()
+  returnPelicula(valor: string) : any
   {
-    console.log(this.peliculaEdit);
+    switch (valor) {
+      case "poster":
+      {
+        return this.peliculaEdit.poster;
+      }
+      case "name":
+      {
+        return this.peliculaEdit.name;
+      }
+      case "year":
+      {
+        return this.peliculaEdit.year;
+      }
+      case "director":
+      {
+        return this.peliculaEdit.director;
+      }
+    }
   }
 
   handleSaveClick()
@@ -51,16 +74,19 @@ export class PeliculaEditComponent {
     if (this.peliForm.valid)
     {
       const peli = this.peliForm.value;
-      console.log(this.peliForm.value);
 
-      if (this.id == null)
+      if (this.idRuta == null)
       {
+        let posicion = this.peliculas.length - 1;
+        let idNuevo = this.peliculas[posicion].id;
+        peli.id = idNuevo;
+
         this.peliApi.Insert(peli).subscribe({
           next: (peli) => {
-            console.log(peli);
+            window.location.replace('http://localhost:4200/');
           },
           error: (peli) => {
-            console.log(peli);
+            window.location.replace('http://localhost:4200/');
           },
         });
       }
@@ -68,10 +94,10 @@ export class PeliculaEditComponent {
       {
         this.peliApi.Update(peli, this.idEdit).subscribe({
           next: (peli) => {
-            console.log(peli);
+            window.location.replace('http://localhost:4200/');
           },
           error: (peli) => {
-            console.log(peli);
+            window.location.replace('http://localhost:4200/');
           },
         });
       }

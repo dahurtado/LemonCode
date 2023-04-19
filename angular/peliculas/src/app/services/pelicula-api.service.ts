@@ -11,7 +11,7 @@ export class PeliculaApiService {
 
   constructor(private http: HttpClient) { }
 
-  getId(id: number): Observable<Pelicula>
+  getById(id: number): Observable<Pelicula>
   {
     return this.http.get<Pelicula>('http://localhost:3001/movies/' + id);
   }
@@ -19,6 +19,11 @@ export class PeliculaApiService {
   getAll() : Observable<Pelicula[]>
   {
     return this.http.get<Pelicula[]>('http://localhost:3001/movies');
+  }
+
+  Delete(id: number): Observable<Pelicula>
+  {
+    return this.http.delete<Pelicula>('http://localhost:3001/movies/' + id);
   }
 
   Update(peli: Pelicula, id: number): Observable<Pelicula>

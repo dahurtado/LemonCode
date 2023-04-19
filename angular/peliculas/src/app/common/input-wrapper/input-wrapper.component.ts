@@ -1,5 +1,8 @@
-import { Component, Input, forwardRef, Inject, INJECTOR, Injector } from '@angular/core';
+import { PeliculaApiService } from '@/services/pelicula-api.service';
+import { Component, Input, forwardRef, Inject, INJECTOR, Injector, Output } from '@angular/core';
 import { ControlValueAccessor, FormControl, NgControl, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
+import { Pelicula } from '@/model/pelicula.model';
 
 @Component({
   selector: 'app-input-wrapper',
@@ -18,11 +21,25 @@ export class InputWrapperComponent implements ControlValueAccessor{
   @Input() label: string;
   @Input() type: string = "text";
   @Input() name: string = "";
+  @Input() ph: any = "";
+
+  idRuta: string;
+  idEdit: number;
+  peli!: Pelicula;
+
   fieldValue = "";
   _formControl!: FormControl;
 
-  constructor (@Inject(INJECTOR) private injector: Injector) {
+  constructor (@Inject(INJECTOR) private injector: Injector, private route: ActivatedRoute, private peliApi: PeliculaApiService) {
     this.label = '';
+
+    this.idRuta = this.route.snapshot.paramMap.get('id')!;
+    this.idEdit = +this.idRuta;
+
+    if (this.idRuta != null)
+    {
+      this.peliApi.getById(this.idEdit).subscribe(data => {this.peli = data});
+    }
   }
 
   ngAfterViewInit(): void {
