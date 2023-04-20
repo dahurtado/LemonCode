@@ -46,7 +46,6 @@ export class InputWrapperComponent implements ControlValueAccessor{
     const ngControl: NgControl | null = this.injector.get(NgControl, null);
     if (ngControl) {
       setTimeout(() => {
-        console.log(ngControl.path);
         this._formControl = ngControl.control as FormControl;
         });
       }
