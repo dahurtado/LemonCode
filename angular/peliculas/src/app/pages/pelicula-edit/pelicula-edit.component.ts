@@ -15,9 +15,6 @@ export class PeliculaEditComponent {
   peliForm: FormGroup;
 
   peliculaEdit: Pelicula = new Pelicula('','','',0);
-  idEdit: number;
-
-  peliculas: Pelicula[];
 
   constructor
   (
@@ -27,27 +24,22 @@ export class PeliculaEditComponent {
   )
   {
     this.idRuta = this.route.snapshot.paramMap.get('id')!;
-    this.idEdit = +this.idRuta;
-
-    this.peliculas = [];
-    this.peliApi.getAll().subscribe((peliculas) => (this.peliculas = peliculas));
 
     if (this.idRuta != null)
     {
-      this.peliApi.getById(this.idEdit).subscribe(data => {this.peliculaEdit = data});
+      this.peliApi.getById(+this.idRuta).subscribe(data => {this.peliculaEdit = data});
     }
 
     this.peliForm = formBuilder.group({
-      id: this.idEdit,
       name: ['', Validators.required],
       poster: ['', [Validators.required, Validators.pattern('https?://.+')]],
       director: ['', Validators.required],
-      year: ['', Validators.required]
+      year: [0, Validators.required]
     });
 
   }
 
-  returnPelicula(valor: string) : any
+  returnPelicula(valor: string) : string | number | undefined
   {
     switch (valor) {
       case "poster":
@@ -60,12 +52,14 @@ export class PeliculaEditComponent {
       }
       case "year":
       {
-        return this.peliculaEdit.year;
+        return +this.peliculaEdit.year;
       }
       case "director":
       {
         return this.peliculaEdit.director;
       }
+      default:
+        return
     }
   }
 
@@ -77,10 +71,6 @@ export class PeliculaEditComponent {
 
       if (this.idRuta == null)
       {
-        let posicion = this.peliculas.length - 1;
-        let idNuevo = this.peliculas[posicion].id;
-        peli.id = idNuevo;
-
         this.peliApi.Insert(peli).subscribe({
           next: (peli) => {
             window.location.replace('http://localhost:4200/');
@@ -92,7 +82,7 @@ export class PeliculaEditComponent {
       }
       else
       {
-        this.peliApi.Update(peli, this.idEdit).subscribe({
+        this.peliApi.Update(peli, +this.idRuta).subscribe({
           next: (peli) => {
             window.location.replace('http://localhost:4200/');
           },

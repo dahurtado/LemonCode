@@ -33,8 +33,6 @@ export class PeliculaApiService {
 
   Insert(peli: Pelicula): Observable<Pelicula>
   {
-    peli.id += 1;
-
     return this.http.post<Pelicula>('http://localhost:3001/movies', peli);
   }
 }
