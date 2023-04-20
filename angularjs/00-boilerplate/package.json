@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@types/angular-mocks": "^1.5.11",
+    "@uirouter/angularjs": "^1.1.0",
     "angular": "^1.6.3",
     "angular-messages": "^1.6.8",
     "angular-toastr": "^2.1.1",

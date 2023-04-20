@@ -6,7 +6,6 @@
     "removeComments": true,
     "sourceMap": true,
     "types": [
-      "jasmine",
        "webpack-env",
        "angular-mocks"       
     ],          
@@ -14,8 +13,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": false,
     "noLib": false,
-    "preserveConstEnums": true,
-    "suppressImplicitAnyIndexErrors": true
+    "preserveConstEnums": true
   },
   "compileOnSave": false,
   "exclude": [

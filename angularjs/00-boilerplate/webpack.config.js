@@ -15,8 +15,8 @@ module.exports = {
     app: "./app/app.ts",
     vendor: [
       "angular",
-      "angular-toastr",
       "@uirouter/angularjs",
+      "angular-toastr",
       "angular-messages",
     ],
     appStyles: [
