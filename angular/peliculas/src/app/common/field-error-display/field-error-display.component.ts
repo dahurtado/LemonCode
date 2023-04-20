@@ -26,8 +26,7 @@ export class FieldErrorDisplayComponent {
   constructor() {
     this.fieldNgModel = null;
     this.fieldErrorObject = {
-      required: 'El campo es obligatorio',
-      pattern: 'El formato no es valido'
+      required: 'El campo es obligatorio'
     };
   }
 

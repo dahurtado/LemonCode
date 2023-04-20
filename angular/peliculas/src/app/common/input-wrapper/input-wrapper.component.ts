@@ -28,7 +28,7 @@ export class InputWrapperComponent implements ControlValueAccessor{
   peli!: Pelicula;
 
   fieldValue = "";
-  _formControl!: FormControl;
+  _formControl: FormControl = new FormControl;
 
   constructor (@Inject(INJECTOR) private injector: Injector, private route: ActivatedRoute, private peliApi: PeliculaApiService) {
     this.label = '';
@@ -43,14 +43,14 @@ export class InputWrapperComponent implements ControlValueAccessor{
   }
 
   ngAfterViewInit(): void {
-      const ngControl: NgControl | null = this.injector.get(NgControl, null);
-      if (ngControl) {
-        setTimeout(() => {
+    const ngControl: NgControl | null = this.injector.get(NgControl, null);
+    if (ngControl) {
+      setTimeout(() => {
+        console.log(ngControl.path);
         this._formControl = ngControl.control as FormControl;
         });
       }
     }
-
 
   onChange: any = () => {}
   onTouch: any = () => {}

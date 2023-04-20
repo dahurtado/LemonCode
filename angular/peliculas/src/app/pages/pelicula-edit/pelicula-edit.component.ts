@@ -39,7 +39,7 @@ export class PeliculaEditComponent {
 
   }
 
-  returnPelicula(valor: string) : string | number | undefined
+  returnPelicula(valor: string) : any
   {
     switch (valor) {
       case "poster":
@@ -58,8 +58,6 @@ export class PeliculaEditComponent {
       {
         return this.peliculaEdit.director;
       }
-      default:
-        return
     }
   }
 

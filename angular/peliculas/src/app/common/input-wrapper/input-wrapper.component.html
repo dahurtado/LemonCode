@@ -4,7 +4,7 @@
   <input
     *ngIf="type == 'number'"
     [type]="type"
-    [(ngModel)]="ph"
+    [ngModel]="ph"
     (ngModelChange)="onChange($event)"
     (blur)="onTouch()"
     min=1920
@@ -17,14 +17,13 @@
     [(ngModel)]="ph"
     (ngModelChange)="onChange($event)"
     (blur)="onTouch()"
-    minlength="3"
   >
   <app-field-error-display
       name="name"
       [fieldNgModel]="_formControl"
       [customFieldErrors]="[{
         id: 'pattern',
-        text: 'La URL debe ser una direccion HTTP bien formada, http://www.miweb.com o https://www.miweb.com'
+        text: 'La URL debe ser una direccion HTTP bien formada: http://www.miweb.com\n\thttps://www.miweb.com',
       },
       {
         id: 'minLength',
