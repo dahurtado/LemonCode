@@ -19,10 +19,10 @@ export const routing = (
 			"content@": { template: "<login></login>" },
 		},
 	})
-	.state("clientlist", <Ng1StateDeclaration>{
-		url: "/clientlist",
+	.state("peliculalist", <Ng1StateDeclaration>{
+		url: "/peliculalist",
 		views: {
-			"content@": { template: "<clientlist></clientlist>" },
+			"content@": { template: "<peliculalist></peliculalist>" },
 		}
 	})
 	;
