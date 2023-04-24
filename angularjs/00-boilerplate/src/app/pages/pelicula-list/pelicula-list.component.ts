@@ -4,7 +4,7 @@ import { Pelicula } from "./pelicula-list.model";
 
 class PeliculaController {
 	peliculaList: Pelicula[] = [];
-	
+
 	constructor(private peliculaApiService: PeliculaApiService){
 		"ngInject";
 		this.peliculaList = [];
@@ -23,7 +23,7 @@ class PeliculaController {
 export const PeliculaListComponent = {
 	template: require("./pelicula-list.component.html") as string,
 	controller: PeliculaController,
-	constrollerAs: "vm",
+	controllerAs: "vm",
 }
 
 PeliculaController.$inject = ["peliculaApiService"];

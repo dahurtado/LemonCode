@@ -12,8 +12,21 @@ export class PeliculaApiService {
 		const deferred = this.$q.defer<Pelicula[]>();
 
 		this.$http.get('http://localhost:3001/movies').then(
-			result => {
+			(result) => {
 				const peliculas = result.data as Pelicula[];
+				deferred.resolve(peliculas);
+			}
+		);
+
+		return deferred.promise;
+	}
+
+	public getPeliculaId(id: number): angular.IPromise<Pelicula> {
+		const deferred = this.$q.defer<Pelicula>();
+
+		this.$http.get('http://localhost:3001/movies/' + id).then(
+			(result) => {
+				const peliculas = result.data as Pelicula;
 				deferred.resolve(peliculas);
 			}
 		);

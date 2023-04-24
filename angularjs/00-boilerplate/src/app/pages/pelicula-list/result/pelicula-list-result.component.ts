@@ -1,7 +1,7 @@
 export const PeliculaListResultComponent = {
 	bindings: {
-		peliculaList: "<",
+		peliculaList: "<"
 	},
 	template: require("./pelicula-list-result.component.html") as string,
-	controllerAs: "vm",
+	controllerAs: "vm"
 };

@@ -3,5 +3,5 @@ export interface Pelicula {
 	name: string;
 	poster: string;
 	director: string;
-	year: number;
+	year: any;
 }
