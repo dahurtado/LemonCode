@@ -1,0 +1,11 @@
+<div 
+	style="display:flex;flex-direction:column"
+	ng-repeat="pelicula in vm.peliculaList"
+>
+	<peliculalistcard 
+		poster="pelicula.poster"
+		name="pelicula.name"
+		year="pelicula.year"
+		director="pelicula.director"
+	></peliculalistcard>
+</div>
