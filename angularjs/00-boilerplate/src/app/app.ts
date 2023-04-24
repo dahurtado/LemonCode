@@ -9,7 +9,7 @@ import { PeliculaListCardComponent } from "./pages/pelicula-list/card/pelicula-l
 import { PeliculaApiService } from "./pages/pelicula-list/pelicula.service";
 
 angular
-	.module("app", ["ui.router"])
+	.module("app", ["ui.router", "toastr"])
 	.config(routing)
 	.component("app", AppComponent)
 	.component("login", LoginComponent)
