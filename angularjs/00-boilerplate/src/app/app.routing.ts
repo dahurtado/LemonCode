@@ -16,13 +16,19 @@ export const routing = (
 	.state("home", <Ng1StateDeclaration>{
 		url: "/home",
 		views: {
-			"content@": { template: "<login></login>" },
+			"content@": { template: "<peliculalist></peliculalist>" },
 		},
 	})
-	.state("peliculalist", <Ng1StateDeclaration>{
-		url: "/peliculalist",
+	.state("peliculaedit", <Ng1StateDeclaration>{
+		url: "/peliculaedit/{id:int}",
 		views: {
-			"content@": { template: "<peliculalist></peliculalist>" },
+			"content@": { template: "<peliculalistedit></peliculalistedit>" },
+		}
+	})
+	.state("peliculacreate", <Ng1StateDeclaration>{
+		url: "/peliculacreate",
+		views: {
+			"content@": { template: "<peliculalistedit></peliculalistedit>" },
 		}
 	})
 	;

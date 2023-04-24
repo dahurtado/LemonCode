@@ -1,5 +1,6 @@
 export const PeliculaListCardComponent = {
 	bindings: {
+		id: "<",
 		poster: "<",
 		name: "<",
 		year: "<",

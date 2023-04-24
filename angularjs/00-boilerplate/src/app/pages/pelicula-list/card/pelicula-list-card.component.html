@@ -1,5 +1,16 @@
 <div class="panel panel-default">
 	<img src="{{ vm.poster }}" style="width: 100px;">
+	<p>
+		<a ui-sref="peliculaedit({id: vm.id})">
+			editar
+		</a>
+	</p>
+	<p>
+		<a ui-sref="peliculacreate">
+			crear
+		</a>
+	</p>
 	<p>{{ vm.name }} ({{ vm.year }})</p>
 	<p>{{ vm.director }}</p>
+	<p>{{ vm.id }}</p>
 </div>
