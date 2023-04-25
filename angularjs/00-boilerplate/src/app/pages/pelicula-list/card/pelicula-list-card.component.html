@@ -4,4 +4,7 @@
 	</a>
 	<p>{{ vm.name }} ({{ vm.year }})</p>
 	<p>{{ vm.director }}</p>
+	<p>
+		<button class="btn btn-sm btn-default" ng-click="vm.borrarPelicula(vm.id)">Borrar pelicula {{vm.id}}</button>
+	</p>
 </div>

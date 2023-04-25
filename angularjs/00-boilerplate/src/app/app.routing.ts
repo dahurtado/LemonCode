@@ -26,7 +26,7 @@ export const routing = (
 		}
 	})
 	.state("peliculacreate", <Ng1StateDeclaration>{
-		url: "/peliculacreate",
+		url: "/peliculaedit",
 		views: {
 			"content@": { template: "<peliculalistedit></peliculalistedit>" },
 		}
