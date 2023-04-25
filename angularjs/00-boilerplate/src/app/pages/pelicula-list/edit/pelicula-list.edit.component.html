@@ -1,3 +1,65 @@
-<p>pre imagen</p>
-<img src="{{vm.peliculaList.poster}}" alt="">
-<p>post imagen</p>
+<p>
+	<img src="{{ vm.pelicula.poster }}" style="width: 300px;">
+</p>
+
+<div class="panel-body">
+	<form role="form">
+		<div class="form-group">
+			<label for="poster">Poster</label>
+			<input 
+				type="text" 
+				name="poster" 
+				id="poster" 
+				class="form-control" 
+				required
+				value="{{vm.pelicula.poster}}"
+				ng-model="vm.poster"
+			>
+		</div>
+		<div class="form-group">
+			<label for="name">Nombre</label>
+			<input 
+				type="text" 
+				name="name" 
+				id="name" 
+				class="form-control" 
+				required
+				value="{{vm.pelicula.name}}"
+				ng-model="vm.name"
+			>
+		</div>
+		<div class="form-group">
+			<label for="year">Año</label>
+			<input 
+				type="number" 
+				min="1920"
+				max="2024"
+				name="year" 
+				id="year" 
+				class="form-control" 
+				required
+				value="{{vm.pelicula.year}}"
+				ng-model="vm.year"
+			>
+		</div>
+		<div class="form-group">
+			<label for="director">Director</label>
+			<input 
+				type="text" 
+				name="director" 
+				id="director" 
+				class="form-control" 
+				required
+				value="{{vm.pelicula.director}}"
+				ng-model="vm.director"
+			>
+		</div>
+		<button 
+			type="submit" 
+			class="btn btn-sm btn-default"
+			ng-click="vm.handleClick(vm.poster, vm.name, vm.year, vm.director)"
+		>
+			Guardar
+		</button>
+	</form>
+</div>
