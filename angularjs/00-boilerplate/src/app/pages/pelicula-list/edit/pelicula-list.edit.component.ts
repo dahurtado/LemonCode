@@ -2,7 +2,7 @@ import { Pelicula } from "../pelicula-list.model";
 import { PeliculaApiService } from "../pelicula.service";
 
 
-var baseUrl = window.location.href.split("/");
+var baseUrl = document.URL.split("/");
 var lenghtUrl = baseUrl.length;
 var idUrl = +baseUrl[lenghtUrl - 1]
 
@@ -22,12 +22,6 @@ export class PeliculaEditController {
 		console.log(baseUrl);
 		console.log(idUrl);
 		console.log(lenghtUrl);
-		
-		if (baseUrl[lenghtUrl - 1] == 'home')
-		{
-			window.location.reload();
-			//caches.delete();
-		}
 		
 		if (lenghtUrl === 6)
 		{
