@@ -1,63 +1,109 @@
-<img src="{{vm.poster}}" style="width: 200px;">
-
-<div class="panel-body">
-	<form role="form">
-		<div class="form-group">
-			<label for="poster">Poster</label>
-			<input 
-				type="text" 
-				name="poster" 
-				id="poster" 
-				class="form-control" 
-				placeholder="{{vm.pelicula.poster}}"
-				required
-				ng-model="vm.poster"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			padding: 0px 15% 0px 15%;
+		}
+		.imagen {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		img {
+			width: 300px;
+		}
+		.form-group div {
+			padding: 5px 0px 0px 10px;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="imagen">
+		<img src="{{vm.poster}}">
+	</div>
+	
+	<div class="panel-body">
+		<form role="form" name="peliForm">
+			<div class="form-group">
+				<label for="poster">Poster</label>
+				<input 
+					type="text" 
+					name="poster" 
+					id="poster" 
+					class="form-control" 
+					placeholder="{{vm.pelicula.poster}}"
+					ng-required="true"
+					ng-model="vm.poster"
+				>
+				<div ng-messages="peliForm.poster.$error">
+					<p ng-messages="required">El campo poster es obligatorio</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="name">Nombre</label>
+				<input 
+					type="text" 
+					name="name" 
+					id="name" 
+					class="form-control" 
+					placeholder="{{vm.pelicula.name}}"
+					ng-model="vm.name"
+					ng-required="true"
+				>
+				<div ng-messages="peliForm.name.$error">
+					<p ng-messages="required">El campo nombre es obligatorio</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="year">Año</label>
+				<input 
+					type="number" 
+					min="1920"
+					max="2024"
+					name="year" 
+					id="year" 
+					class="form-control" 
+					placeholder="{{vm.pelicula.year}}"
+					ng-model="vm.year"
+					ng-required="true"
+				>
+				<div ng-messages="peliForm.year.$error">
+					<p ng-messages="required">El campo año es obligatorio</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="director">Director</label>
+				<input 
+					type="text" 
+					name="director" 
+					id="director" 
+					class="form-control" 
+					placeholder="{{vm.pelicula.director}}"
+					ng-model="vm.director"
+					ng-required="true"
+				>
+				<div ng-messages="peliForm.director.$error">
+					<p ng-messages="required">El campo director es obligatorio</p>
+				</div>
+			</div>
+			<button 
+				type="submit" 
+				class="btn btn-sm btn-default"
+				ng-click="vm.handleClick(vm.poster, vm.name, vm.year, vm.director)"
+				ng-disabled="peliForm.$pristine"
 			>
-		</div>
-		<div class="form-group">
-			<label for="name">Nombre</label>
-			<input 
-				type="text" 
-				name="name" 
-				id="name" 
-				class="form-control" 
-				placeholder="{{vm.pelicula.name}}"
-				ng-model="vm.name"
-				required
-			>
-		</div>
-		<div class="form-group">
-			<label for="year">Año</label>
-			<input 
-				type="number" 
-				min="1920"
-				max="2024"
-				name="year" 
-				id="year" 
-				class="form-control" 
-				required
-				placeholder="{{vm.pelicula.year}}"
-				ng-model="vm.year"
-			>
-		</div>
-		<div class="form-group">
-			<label for="director">Director</label>
-			<input 
-				type="text" 
-				name="director" 
-				id="director" 
-				class="form-control" 
-				placeholder="{{vm.pelicula.director}}"
-				ng-model="vm.director"
-				required
-			>
-		</div>
-		<button 
-			type="submit" 
-			class="btn btn-sm btn-default"
-			ng-click="vm.handleClick(vm.poster, vm.name, vm.year, vm.director)"
-		>
-			Guardar
-		</button>
-	</form>
-</div>
+				Guardar
+			</button>
+		</form>
+	</div>
+</body>
+</html>

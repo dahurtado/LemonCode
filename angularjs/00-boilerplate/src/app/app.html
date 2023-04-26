@@ -1,9 +1,42 @@
-<header>
-  <nav>
-    <p><a href="http://localhost:8080/#!/peliculaedit">Crear Pelicula</a></p>
-    <p><a ui-sref="home">Pagina principal</a></p>
-  </nav>
-</header>
-<div>
-  <div ui-view="content"></div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    nav {
+      display: flex;
+      justify-content:space-around;
+      background-color: rgb(255, 234, 176);
+      margin: 5px 0px 5px 0px;
+      padding: 10px;
+    }
+    nav>p {
+      margin: 0px;
+      padding: 0px;
+    }
+    .panel {
+      padding: 5px;
+    }
+    .panel>div {
+      margin: 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <p><a href="http://localhost:8080/#!/peliculaedit">Crear Pelicula</a></p>
+      <p><a ui-sref="home">Pagina principal</a></p>
+    </nav>
+  </header>
+  <div>
+    <div ui-view="content"></div>
+  </div>
+</body>
+</html>

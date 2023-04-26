@@ -14,10 +14,9 @@ class PeliculaController {
 		this.peliculaApiService.getPeliculasList().then(
 			(result) => {
 				this.peliculaList = result;
-				console.log(this.peliculaList);
 			}
 		);
-	}
+	};
 }
 
 export const PeliculaListComponent = {

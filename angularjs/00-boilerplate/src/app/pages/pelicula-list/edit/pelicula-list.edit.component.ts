@@ -20,22 +20,14 @@ export class PeliculaEditController {
 		"ngInject";
 		this.pelicula = null;
 	}
-	$onInit() {
-		console.log("ID: " + this.stateParams.id);
-		
+	$onInit() {		
 		if (this.stateParams.id != null)
 		{
 			this.peliculaApiService.getPeliculaId(this.stateParams.id).then(
 				(result) => {
 					this.pelicula = result;
-					console.log(this.pelicula.name);
-					console.log(result);
 				}
 			)
-		}
-		else
-		{
-			console.log("funciona");
 		}
 	}
 	handleClick = (poster: string, name: string, year: number, director: string) => {
@@ -44,23 +36,17 @@ export class PeliculaEditController {
 		{
 			this.pelicula = new Pelicula(this.poster, this.name, this.director, this.year);
 			this.pelicula.id = this.stateParams.id;
-			console.log(this.pelicula);
 			this.peliculaApiService.updatePelicula(this.pelicula).then(
 				(result) => {
-					console.log("actu");
 					window.location.replace('http://localhost:8080/#!/home');
 				}
 			);
 		}
 		else
-		{
-			console.log("Poster de form: " + this.poster);
-			
+		{			
 			this.pelicula = new Pelicula(this.poster, this.name, this.director, this.year);
-			console.log(this.pelicula);
 			this.peliculaApiService.insertPelicula(this.pelicula).then(
 				(result) => {
-					console.log("insert");
 					window.location.replace('http://localhost:8080/#!/home');
 				}
 			);

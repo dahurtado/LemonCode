@@ -12,8 +12,6 @@ export class PeliculaCardController {
 		this.idPeli = id;
 		this.peliculaApiService.deletePelicula(this.idPeli).then(
 			(result) => {
-				console.log(result);
-				console.log("Se borro");
 				window.location.reload();
 			}
 		)
