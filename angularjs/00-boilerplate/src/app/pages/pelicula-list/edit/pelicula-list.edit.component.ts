@@ -1,31 +1,31 @@
 import { Pelicula } from "../pelicula-list.model";
 import { PeliculaApiService } from "../pelicula.service";
-
-
-var baseUrl = document.URL.split("/");
-var lenghtUrl = baseUrl.length;
-var idUrl = +baseUrl[lenghtUrl - 1]
+import { StateParams } from "@uirouter/angularjs";
 
 
 export class PeliculaEditController {
-	pelicula: Pelicula;
-	poster: string = "";
+	pelicula: Pelicula = new Pelicula("", "", "", 0);
+
+	poster: string;
 	name: string;
 	year: number;
 	director: string;
 	
-	constructor (private peliculaApiService: PeliculaApiService){
+	constructor
+	(
+		private peliculaApiService: PeliculaApiService, 
+		private stateParams: StateParams
+	)
+	{
 		"ngInject";
 		this.pelicula = null;
 	}
 	$onInit() {
-		console.log(baseUrl);
-		console.log(idUrl);
-		console.log(lenghtUrl);
+		console.log("ID: " + this.stateParams.id);
 		
-		if (lenghtUrl === 6)
+		if (this.stateParams.id != null)
 		{
-			this.peliculaApiService.getPeliculaId(idUrl).then(
+			this.peliculaApiService.getPeliculaId(this.stateParams.id).then(
 				(result) => {
 					this.pelicula = result;
 					console.log(this.pelicula.name);
@@ -33,15 +33,17 @@ export class PeliculaEditController {
 				}
 			)
 		}
+		else
+		{
+			console.log("funciona");
+		}
 	}
 	handleClick = (poster: string, name: string, year: number, director: string) => {
 		
-		if (lenghtUrl === 6)
+		if (this.stateParams.id != null)
 		{
-			this.pelicula.poster = poster;
-			this.pelicula.name = name;
-			this.pelicula.year = year;
-			this.pelicula.director = director;
+			this.pelicula = new Pelicula(this.poster, this.name, this.director, this.year);
+			this.pelicula.id = this.stateParams.id;
 			console.log(this.pelicula);
 			this.peliculaApiService.updatePelicula(this.pelicula).then(
 				(result) => {
@@ -52,10 +54,9 @@ export class PeliculaEditController {
 		}
 		else
 		{
-			this.pelicula.poster = poster;
-			this.pelicula.name = name;
-			this.pelicula.year = year;
-			this.pelicula.director = director;
+			console.log("Poster de form: " + this.poster);
+			
+			this.pelicula = new Pelicula(this.poster, this.name, this.director, this.year);
 			console.log(this.pelicula);
 			this.peliculaApiService.insertPelicula(this.pelicula).then(
 				(result) => {
@@ -73,4 +74,4 @@ export const PeliculaListEditComponent = {
 	controllerAs: "vm",
 };
 
-PeliculaEditController.$inject = ["peliculaApiService"]
+PeliculaEditController.$inject = ["peliculaApiService", "$stateParams"]

@@ -1,7 +1,16 @@
-export interface Pelicula {
+export class Pelicula {
 	id: number;
-	name: string;
 	poster: string;
+	name: string;
 	director: string;
-	year: any;
+	year: number;
+
+	constructor(poster: string, name: string, director: string, year: number)
+	{
+		this.id;
+		this.poster = poster;
+		this.name = name;
+		this.director = director;
+		this.year = year;
+	}
 }
