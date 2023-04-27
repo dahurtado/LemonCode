@@ -10,6 +10,7 @@
     (blur)="onTouch()"
     min='1920'
     max='2024'
+    required
   >
 
   <input
@@ -19,6 +20,7 @@
     [(ngModel)]="ph"
     (ngModelChange)="onChange($event)"
     (blur)="onTouch()"
+    required
   >
   <app-field-error-display
       name="name"

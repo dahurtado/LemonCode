@@ -63,7 +63,7 @@ export class PeliculaEditComponent {
 
   handleSaveClick()
   {
-    if (this.peliForm.valid)
+    if (this.peliForm.valid == true)
     {
       this.peliculaEdit = this.peliForm.value;
       if (this.peliculaEdit.year < 1920)
@@ -97,6 +97,9 @@ export class PeliculaEditComponent {
           },
         });
       }
+    }
+    else {
+     alert("Debes modificar todos los campos!");
     }
   }
 }
