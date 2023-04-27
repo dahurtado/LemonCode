@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useDebounce } from 'use-debounce';
 
 interface MemberEntity {
   id: string;
@@ -7,19 +8,22 @@ interface MemberEntity {
   avatar_url: string;
 }
 
+
 export const ListPage: React.FC = () => {
   const [members, setMembers] = React.useState<MemberEntity[]>([]);
   const [org, setOrg] = React.useState("lemoncode");
+  const [debounceOrg] = useDebounce(org, 1000);
+
   console.log(org);
+  let orgUrl = "https://api.github.com/orgs/" + org + "/members";
 
   React.useEffect(() => {
-    let orgUrl = "https://api.github.com/orgs/" + org + "/members";
     console.log(orgUrl);
 
     fetch(orgUrl)
       .then((response) => response.json())
       .then((json) => setMembers(json));
-  }, [org]);
+  }, [debounceOrg]);
 
   return (
     <>
