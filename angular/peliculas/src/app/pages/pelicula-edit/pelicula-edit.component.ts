@@ -65,11 +65,19 @@ export class PeliculaEditComponent {
   {
     if (this.peliForm.valid)
     {
-      const peli = this.peliForm.value;
+      this.peliculaEdit = this.peliForm.value;
+      if (this.peliculaEdit.year < 1920)
+      {
+        this.peliculaEdit.year = 1920;
+      }
+      if (this.peliculaEdit.year > 2024)
+      {
+        this.peliculaEdit.year = 2024;
+      }
 
       if (this.idRuta == null)
       {
-        this.peliApi.Insert(peli).subscribe({
+        this.peliApi.Insert(this.peliculaEdit).subscribe({
           next: (peli) => {
             window.location.replace('http://localhost:4200/');
           },
@@ -80,7 +88,7 @@ export class PeliculaEditComponent {
       }
       else
       {
-        this.peliApi.Update(peli, +this.idRuta).subscribe({
+        this.peliApi.Update(this.peliculaEdit, +this.idRuta).subscribe({
           next: (peli) => {
             window.location.replace('http://localhost:4200/');
           },

@@ -3,17 +3,19 @@
 
   <input
     *ngIf="type == 'number'"
-    [type]="type"
-    [ngModel]="ph"
+    type="number"
+    placeholder="{{ph}}"
+    [(ngModel)]="ph"
     (ngModelChange)="onChange($event)"
     (blur)="onTouch()"
-    min=1920
-    max=2024
+    min='1920'
+    max='2024'
   >
 
   <input
     *ngIf="type != 'number'"
-    [type]="type"
+    type="text"
+    placeholder="{{ph}}"
     [(ngModel)]="ph"
     (ngModelChange)="onChange($event)"
     (blur)="onTouch()"
