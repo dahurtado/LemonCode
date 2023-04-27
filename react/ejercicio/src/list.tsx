@@ -9,16 +9,30 @@ interface MemberEntity {
 
 export const ListPage: React.FC = () => {
   const [members, setMembers] = React.useState<MemberEntity[]>([]);
+  const [org, setOrg] = React.useState("lemoncode");
+  console.log(org);
 
   React.useEffect(() => {
-    fetch(`https://api.github.com/orgs/lemoncode/members`)
+    let orgUrl = "https://api.github.com/orgs/" + org + "/members";
+    console.log(orgUrl);
+
+    fetch(orgUrl)
       .then((response) => response.json())
       .then((json) => setMembers(json));
-  }, []);
+  }, [org]);
 
   return (
     <>
       <h2>Hello from List page</h2>+{" "}
+
+      <div>
+        <input 
+          type="text"
+          value={org}
+          onChange={(e) => setOrg(e.target.value)}
+        />
+      </div>
+
       <div className="list-user-list-container">
         <span className="list-header">Avatar</span>
         <span className="list-header">Id</span>
