@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ListPage } from "./list";
 import { DetailPage } from "./detail";
+import { RicknMortyList } from "./rick&morty";
 
 export const App = () => {
   return (
@@ -9,6 +10,7 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<ListPage />} />
         <Route path="/detail/:id" element={<DetailPage />} />
+        <Route path="/rick&morty" element= {<RicknMortyList />}/>
       </Routes>
     </Router>
   );

@@ -7,7 +7,6 @@ interface MemberEntity {
   avatar_url: string;
 }
 
-
 export const ListPage: React.FC = () => {
   const [members, setMembers] = React.useState<MemberEntity[]>([]);
   const [org, setOrg] = React.useState("lemoncode");
@@ -26,16 +25,20 @@ export const ListPage: React.FC = () => {
   if (members.map == null) {
     return (
       <>
-        <h2>Hello from List page</h2>+{" "}
-  
+        <h2>Hello from List page</h2>
+
+        <p>
+          <Link to={"/rick&morty"}>Hey</Link>
+        </p>
+
         <div>
-          <input 
+          <input
             type="text"
             value={org}
             onChange={(e) => setOrg(e.target.value)}
-            />
+          />
         </div>
-  
+
         <div className="list-user-list-container">
           <span className="list-header">Avatar</span>
           <span className="list-header">Id</span>
@@ -44,21 +47,23 @@ export const ListPage: React.FC = () => {
         </div>
       </>
     );
-  }
-  else
-  {
+  } else {
     return (
       <>
-        <h2>Hello from List page</h2>+{" "}
+        <h2>Hello from List page</h2>
+
+        <p>
+          <Link to={"/rick&morty"}>Hey</Link>
+        </p>
 
         <div>
-          <input 
+          <input
             type="text"
             value={org}
             onChange={(e) => setOrg(e.target.value)}
           />
         </div>
-  
+
         <div className="list-user-list-container">
           <span className="list-header">Avatar</span>
           <span className="list-header">Id</span>
@@ -75,6 +80,4 @@ export const ListPage: React.FC = () => {
       </>
     );
   }
-
-  
 };
