@@ -9,6 +9,8 @@ interface CallBackEntity {
 export const RicknMortyList: React.FC = () => {
 
 	const [callResults, setResults] = React.useState<CallBackEntity>();
+	
+	const [busqueda, setBusqueda] = React.useState("");
 
 	const {id} = useParams();
 	let idPagina = +id;
@@ -19,7 +21,8 @@ export const RicknMortyList: React.FC = () => {
 	const getDatos = async () => {
 		await axios.get(apiUrl)
 		.then(respuesta => setResults(respuesta.data))
-	}
+	};
+
 	React.useEffect(() => {
 		getDatos()
 	}, []);
@@ -29,6 +32,8 @@ export const RicknMortyList: React.FC = () => {
 		console.log();
 		
 		const datillos = callResults.results;
+
+
 		if (idPagina - 2 < 1)
 		{
 			return (
@@ -40,6 +45,15 @@ export const RicknMortyList: React.FC = () => {
 					<button>
 						<a href={"/rick&morty/" + (idPagina)}>Siguiente pagina</a>
 					</button>
+
+					
+					<div>
+						<input
+							type="text"
+							placeholder="Busca un personaje en esta pagina!"
+							onChange={(e) => setBusqueda(e.target.value)}
+						/>
+					</div>
 					<table>
 						<thead>
 							<tr>

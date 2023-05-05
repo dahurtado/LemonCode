@@ -11,6 +11,7 @@ interface MemberEntity {
 export const ListPage: React.FC = () => {
   const [members, setMembers] = React.useState<MemberEntity[]>([]);
   const [org, setOrg] = React.useState("lemoncode");
+  const [busqueda, setBusqueda] = React.useState("");
   const [debounceOrg] = useDebounce(org, 500);
 
   let orgUrl = "https://api.github.com/orgs/" + org.toLowerCase() + "/members";
@@ -27,7 +28,7 @@ export const ListPage: React.FC = () => {
         <h2>Hello from List page</h2>
 
         <button>
-          <Link to={"/rick&morty"}>Lista de Rick y Morty</Link>
+          <Link to={"/rick&morty/1"}>Lista de Rick y Morty</Link>
         </button>
 
         <div>

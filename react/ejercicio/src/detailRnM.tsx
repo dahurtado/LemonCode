@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
+import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility';
+import HomeIcon from '@mui/icons-material/Home';
 
 interface CharacterEntity {
 	
@@ -36,14 +38,11 @@ export const DetailPageRnM: React.FC = () => {
 		return (
 			<>
 				<header>
-					<h2>Hello from RnM Detail page</h2>
-					<h3>User Id: {id}</h3>
-					<p>
+					<h2>Hello from RnM Detail page <SettingsAccessibilityIcon/></h2>
+					<div>
+						<Link to="/"><HomeIcon fontSize="small"/>Pagina Principal</Link>
 						<Link to="/rick&morty/1">Volver a lista de Rick y Morty</Link>
-					</p>
-					<p>
-						<Link to="/">Pagina Principal</Link>
-					</p>
+					</div>
 				</header>
 
 				<main>
@@ -53,25 +52,25 @@ export const DetailPageRnM: React.FC = () => {
 							<caption>Datos del personaje</caption>
 							<tbody>
 								<tr>
-									<td>Nombre</td>
+									<th>Nombre</th>
 									<td>{datos.name}</td>
 								</tr>
 								<tr>
-									<td>Genero</td>
+									<th>Genero</th>
 									<td>{datos.gender}</td>
 								</tr>
 								<tr>
-									<td>Especie</td>
+									<th>Especie</th>
 									<td>{datos.species}</td>
 								</tr>
 								<tr>
-									<td>Tipo</td>
+									<th>Tipo</th>
 									<td>
 										{datos.type == "" ? "Desconocido" : datos.type}
 									</td>
 								</tr>
 								<tr>
-									<td>Estado</td>
+									<th>Estado</th>
 									<td>{datos.status}</td>
 								</tr>
 							</tbody>
