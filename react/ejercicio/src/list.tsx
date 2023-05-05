@@ -13,7 +13,7 @@ export const ListPage: React.FC = () => {
   const [org, setOrg] = React.useState("lemoncode");
   const [debounceOrg] = useDebounce(org, 500);
 
-  let orgUrl = "https://api.github.com/orgs/" + org + "/members";
+  let orgUrl = "https://api.github.com/orgs/" + org.toLowerCase() + "/members";
 
   React.useEffect(() => {
     fetch(orgUrl)
@@ -52,7 +52,7 @@ export const ListPage: React.FC = () => {
         <h2>Hello from List page</h2>
 
         <button>
-          <Link to={"/rick&morty"}>Lista de Rick y Morty</Link>
+          <Link to={"/rick&morty/1"}>Lista de Rick y Morty</Link>
         </button>
 
         <div>

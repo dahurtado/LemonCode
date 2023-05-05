@@ -39,7 +39,7 @@ export const DetailPageRnM: React.FC = () => {
 					<h2>Hello from RnM Detail page</h2>
 					<h3>User Id: {id}</h3>
 					<p>
-						<Link to="/rick&morty">Volver a lista de Rick y Morty</Link>
+						<Link to="/rick&morty/1">Volver a lista de Rick y Morty</Link>
 					</p>
 					<p>
 						<Link to="/">Pagina Principal</Link>
