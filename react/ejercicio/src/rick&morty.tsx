@@ -39,21 +39,16 @@ export const RicknMortyList: React.FC = () => {
 			return (
 				<>
 					<h2>API de Rick y Morty</h2>
-					<button>
-						<Link to={"/"}>Pagina principal</Link>
-					</button>
-					<button>
-						<a href={"/rick&morty/" + (idPagina)}>Siguiente pagina</a>
-					</button>
 
 					
-					<div>
-						<input
-							type="text"
-							placeholder="Busca un personaje en esta pagina!"
-							onChange={(e) => setBusqueda(e.target.value)}
-						/>
-					</div>
+					<header>
+						<button>
+							<Link to={"/"}>Pagina principal</Link>
+						</button>
+						<button>
+							<a href={"/rick&morty/" + (idPagina)}>Siguiente pagina</a>
+						</button>
+					</header>
 					<table>
 						<thead>
 							<tr>
@@ -94,15 +89,17 @@ export const RicknMortyList: React.FC = () => {
 			return (
 				<>
 					<h2>API de Rick y Morty</h2>
-					<button>
-						<Link to={"/"}>Pagina principal</Link>
-					</button>
-					<button>
-						<a href={"/rick&morty/" + (idPagina - 2)}>Anterior pagina</a>
-					</button>
-					<button>
-						<a href={"/rick&morty/" + (idPagina)}>Siguiente pagina</a>
-					</button>
+					<header>
+						<button>
+							<Link to={"/"}>Pagina principal</Link>
+						</button>
+						<button>
+							<a href={"/rick&morty/" + (idPagina - 2)}>Anterior pagina</a>
+						</button>
+						<button>
+							<a href={"/rick&morty/" + (idPagina)}>Siguiente pagina</a>
+						</button>
+					</header>
 					<table>
 						<thead>
 							<tr>

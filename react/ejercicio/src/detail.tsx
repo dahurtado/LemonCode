@@ -6,7 +6,7 @@ export const DetailPage: React.FC = () => {
 
   return (
     <>
-      <h2>Hello from Detail page</h2>
+      <h2>Pagina de detalle</h2>
       <h3>User Id: {id}</h3>
       <Link to="/">Back to list page</Link>
     </>

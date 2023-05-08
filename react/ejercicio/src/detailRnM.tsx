@@ -37,12 +37,10 @@ export const DetailPageRnM: React.FC = () => {
 		
 		return (
 			<>
+				<h2>Pagina de personaje <SettingsAccessibilityIcon/></h2>
 				<header>
-					<h2>Hello from RnM Detail page <SettingsAccessibilityIcon/></h2>
-					<div>
-						<Link to="/"><HomeIcon fontSize="small"/>Pagina Principal</Link>
-						<Link to="/rick&morty/1">Volver a lista de Rick y Morty</Link>
-					</div>
+					<Link to="/"><HomeIcon fontSize="small"/>Pagina Principal</Link>
+					<Link to="/rick&morty/1">Volver a lista de Rick y Morty</Link>
 				</header>
 
 				<main>

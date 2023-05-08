@@ -27,17 +27,17 @@ export const ListPage: React.FC = () => {
       <>
         <h2>Hello from List page</h2>
 
-        <button>
-          <Link to={"/rick&morty/1"}>Lista de Rick y Morty</Link>
-        </button>
 
-        <div>
+        <header>
           <input
             type="text"
             value={org}
             onChange={(e) => setOrg(e.target.value)}
           />
-        </div>
+          <button>
+            <Link to={"/rick&morty/1"}>Lista de Rick y Morty</Link>
+          </button>
+        </header>
 
         <div className="list-user-list-container">
           <span className="list-header">Avatar</span>
@@ -50,19 +50,19 @@ export const ListPage: React.FC = () => {
   } else {
     return (
       <>
-        <h2>Hello from List page</h2>
+        <h2>Lista de organizaciones</h2>
 
-        <button>
-          <Link to={"/rick&morty/1"}>Lista de Rick y Morty</Link>
-        </button>
 
-        <div>
+        <header>
           <input
             type="text"
             value={org}
             onChange={(e) => setOrg(e.target.value)}
           />
-        </div>
+          <button>
+            <Link to={"/rick&morty/1"}>Lista de Rick y Morty</Link>
+          </button>
+        </header>
 
         <table>
           <thead>
