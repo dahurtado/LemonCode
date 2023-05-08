@@ -1,6 +1,6 @@
 # Laboratorio AngularJS
 
-En este laboratorio es la extension de [Angular](https://github.com/dahurtado/LemonCode/tree/main/angular)
+En este laboratorio es el pregursor de [Angular](https://github.com/dahurtado/LemonCode/tree/main/angular)
 
 Contenidos:
  1. Boilerplate
